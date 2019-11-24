@@ -25,6 +25,19 @@
         display: flex;
         flex-flow: column;
       }
+      .marketing {
+        height: fit-content;
+        min-height: 100vh;
+        background: #fafafc;
+        position: relative;
+      }
+      .marketing_bg_container {
+        height: 100vh;
+        background-image: url("./assets/marketing_bg.svg");
+        background-size: 100%;
+        position: relative;
+        top: -250px;
+      }
       .hero > header > .logo {
         cursor: pointer;
         padding-left: 10%;
@@ -162,6 +175,8 @@
         </section>
       </section>
     </section>
-    <section class="marketing"></section>
+    <section class="marketing">
+      <section class="marketing_bg_container"></section>
+    </section>
   </body>
 </html>
