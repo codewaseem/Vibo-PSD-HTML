@@ -25,19 +25,6 @@
         display: flex;
         flex-flow: column;
       }
-      .marketing {
-        height: fit-content;
-        min-height: 100vh;
-        background: #fafafc;
-        position: relative;
-      }
-      .marketing_bg_container {
-        height: 100vh;
-        background-image: url("./assets/marketing_bg.svg");
-        background-size: 100%;
-        position: relative;
-        top: -250px;
-      }
       .hero > header > .logo {
         cursor: pointer;
         padding-left: 10%;
@@ -130,8 +117,56 @@
         color: #233148;
         background: white;
       }
-      .smartphone {
+      .hero .smartphone {
         margin-top: 50px;
+      }
+      .marketing {
+        /* height: fit-content; */
+        /* min-height: 100vh; */
+        background: #fafafc;
+        position: relative;
+      }
+      .marketing_bg_container {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./assets/marketing_bg.svg");
+        background-size: 100%;
+        position: absolute;
+        top: -250px;
+      }
+      .marketing_content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(18, minmax(50px, 1fr));
+        grid-template-rows: repeat(18, 40px);
+      }
+      .marketing_content > .smartphone {
+        grid-column: 2 / 5;
+        grid-row: 3 / 5;
+      }
+      .marketing_content > .add1 {
+        border: 1px solid black;
+        grid-column: 9 / span 3;
+        grid-row: 1 / span 6;
+      }
+      .marketing_content > .add2 {
+        border: 1px solid black;
+        grid-column: 13 / span 3;
+        grid-row: 4 / span 6;
+      }
+
+      .marketing_content > .add3 {
+        border: 1px solid black;
+        grid-column: 8 / span 3;
+        grid-row: 8 / span 6;
+      }
+
+      .marketing_content > .add4 {
+        border: 1px solid black;
+        grid-column: 12 / span 3;
+        grid-row: 11 / span 6;
       }
     </style>
   </head>
@@ -171,12 +206,23 @@
           <button class="btn">Contact Us</button>
         </section>
         <section class="smartphone">
-          <img src="./assets/hero_smartphone.svg" />
+          <img alt="Smartphone" src="./assets/hero_smartphone.svg" />
         </section>
       </section>
     </section>
     <section class="marketing">
       <section class="marketing_bg_container"></section>
+      <section class="marketing_content">
+        <img
+          class="smartphone"
+          src="./assets/hero_smartphone.svg"
+          alt="Smartphone"
+        />
+        <div class="add1">add1</div>
+        <div class="add2">add2</div>
+        <div class="add3">add3</div>
+        <div class="add4">add4</div>
+      </section>
     </section>
   </body>
 </html>
