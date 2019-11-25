@@ -121,11 +121,15 @@
       button[class*="btn-cta"]:hover {
         transform: translate(0, -1px);
       }
+      button.btn-invert {
+        background-color: #33d2fd;
+        color: white;
+      }
       .hero .smartphone {
         margin-top: 50px;
       }
       .marketing {
-        height: 100vh;
+        height: fit-content;
         background: #fafafc;
         position: relative;
         padding: 2vh 4vw;
@@ -140,7 +144,7 @@
         left: 0px;
       }
       .marketing_content {
-        max-height: 100vmin;
+        max-height: fit-content;
         position: relative;
         z-index: 1;
         max-width: 1250px;
@@ -206,16 +210,89 @@
         text-align: center;
       }
 
-      .marketing-2 {
+      .marketing-2,
+      .marketing-1 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        padding: 30px;
+        background-color: #fafafc;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
       }
 
+      .marketing-2 img {
+        max-height: 300px;
+      }
+
+      .marketing-2 article {
+        max-width: 600px;
+        margin: 0 auto;
+        display: grid;
+        align-content: space-between;
+        max-height: 300px;
+      }
+
+      .marketing-2 article h1,
+      .marketing-1 article h1 {
+        font-size: 30px;
+        line-height: 60px;
+        color: #233148;
+        font-family: "Work Sans";
+        font-weight: 700;
+      }
+      .marketing-2 .description,
+      .marketing-1 .description {
+        font-size: 14px;
+        line-height: 27px;
+        color: #6a6d89;
+        font-family: "Work Sans";
+        font-weight: 400;
+        max-width: 400px;
+        margin-left: auto;
+      }
       .ally-heading {
         position: absolute;
         left: -100vw;
       }
 
+      .phone-text {
+        font-size: 15px;
+        line-height: 20px;
+        color: #233148;
+        font-family: "Work Sans";
+        font-weight: 600;
+        margin: 15px 0px;
+      }
+      .phone-text::before {
+        font-size: 15px;
+        line-height: 20px;
+        content: "✓";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        margin-right: 20px;
+        border-radius: 50%;
+        background-color: #33d2fd;
+      }
+
+      .marketing-1 {
+        background-color: white;
+        text-align: end;
+      }
+
+      .info-card {
+        filter: drop-shadow(0px 6px 4.5px rgba(35, 39, 47, 0.1));
+        background-color: #ffffff;
+        padding: 25px 35px;
+      }
+      .marketing-1 article.info-card h1 {
+        font-size: 15px;
+        line-height: 27px;
+        color: #233148;
+        font-family: "Work Sans";
+        font-weight: 600;
+        text-align: left;
+      }
       @media screen and (max-width: 829px) {
         .marketing_content {
           grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -339,6 +416,44 @@
           </article>
         </div>
       </div>
+    </div>
+    <div class="marketing-1">
+      <article>
+        <h1>Stable And Ready</h1>
+        <p class="description">
+          Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan
+          tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit
+          amet dui. Curabitur aliquet quam id dui posuere blandit. Curabitur
+          aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam.
+        </p>
+        <button class="btn-cta btn-invert">Download Free</button>
+      </article>
+      <div>
+        <article class="info-card">
+          <div class="icon"></div>
+          <div class="info">
+            <h1>Made With Love</h1>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="marketing-2">
+      <img src="./assets/code_box.svg" alt="Code Box" />
+      <article>
+        <h1>
+          Everything You Need
+        </h1>
+        <div>
+          <p class="phone-text"><span class="round-check"></span>Android</p>
+          <p class="phone-text"><span class="round-check"></span>iPhone</p>
+        </div>
+        <p class="description">
+          Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan
+          tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit
+          amet dui. Curabitur aliquet quam id dui posuere blandit. Curabitur
+          aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam.
+        </p>
+      </article>
     </div>
   </body>
 </html>
