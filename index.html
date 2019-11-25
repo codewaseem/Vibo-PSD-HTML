@@ -220,12 +220,10 @@
       }
 
       .marketing-2 img {
-        max-height: 300px;
+        max-height: 400px;
       }
 
       .marketing-2 article {
-        max-width: 600px;
-        margin: 0 auto;
         display: grid;
         align-content: space-between;
         max-height: 300px;
@@ -276,6 +274,7 @@
       }
 
       .marketing-1 {
+        padding: 75px 20px;
         background-color: white;
         text-align: end;
       }
@@ -283,7 +282,22 @@
       .info-card {
         filter: drop-shadow(0px 6px 4.5px rgba(35, 39, 47, 0.1));
         background-color: #ffffff;
-        padding: 25px 35px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 25px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .marketing-1 article.info-card:hover {
+        background-color: #33d2fd;
+        color: white;
+      }
+      .info-cards {
+        display: grid;
+        gap: 20px;
       }
       .marketing-1 article.info-card h1 {
         font-size: 15px;
@@ -292,6 +306,27 @@
         font-family: "Work Sans";
         font-weight: 600;
         text-align: left;
+      }
+
+      .marketing-1 article.info-card:hover h1 {
+        color: white;
+      }
+      .marketing-1 .download-description {
+        height: 320px;
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+      }
+
+      .marketing-2 .description {
+        margin-left: 0;
+        margin-right: auto;
+      }
+      .marketing-1 button.btn-invert {
+        margin: 0;
+      }
+      button.btn-invert:hover {
+        box-shadow: 0px 0px 5px 5px #33d2fd32;
       }
       @media screen and (max-width: 829px) {
         .marketing_content {
@@ -330,6 +365,20 @@
           grid-column: auto;
           grid-row: auto;
         }
+      }
+      .info-card p {
+        text-align: left;
+        max-width: 400px;
+        margin-right: auto;
+        height: 0px;
+        color: white;
+        transform: scale(0, 0);
+        transition: 75ms linear 150ms;
+      }
+      .info-card:hover p {
+        transform: scale(1, 1);
+        height: 50px;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -418,7 +467,7 @@
       </div>
     </div>
     <div class="marketing-1">
-      <article>
+      <article class="download-description">
         <h1>Stable And Ready</h1>
         <p class="description">
           Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan
@@ -428,11 +477,45 @@
         </p>
         <button class="btn-cta btn-invert">Download Free</button>
       </article>
-      <div>
+      <div class="info-cards">
         <article class="info-card">
-          <div class="icon"></div>
+          <img src="./assets/heart.svg" alt="heart" />
           <div class="info">
             <h1>Made With Love</h1>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Nulla porttitor
+              accumsan tincidunt. Vestibulum ac diam.
+            </p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="./assets/free_tag.svg" alt="Free Use" />
+          <div class="info">
+            <h1>Free Of Use</h1>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Nulla porttitor
+              accumsan tincidunt. Vestibulum ac diam.
+            </p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="./assets/kit.svg" alt="Support" />
+          <div class="info">
+            <h1>Full Support Available</h1>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Nulla porttitor
+              accumsan tincidunt. Vestibulum ac diam.
+            </p>
+          </div>
+        </article>
+        <article class="info-card">
+          <img src="./assets/pencil.svg" alt="Modern UI" />
+          <div class="info">
+            <h1>Modern UI & UX</h1>
+            <p>
+              Cras ultricies ligula sed magna dictum porta. Nulla porttitor
+              accumsan tincidunt. Vestibulum ac diam.
+            </p>
           </div>
         </article>
       </div>
