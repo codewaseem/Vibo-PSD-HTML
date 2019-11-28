@@ -443,3 +443,79 @@ button.btn-invert:hover {
   box-shadow: 0px 0px 10px 5px #ff7c6e5f;
   transform: translateX(-50%) scale(1.1);
 }
+
+.info-section {
+  padding: 100px;
+  padding-top: 200px;
+  display: grid;
+  gap: 60px;
+}
+
+.info-section > .nav-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+}
+
+.info-section > .nav-lists h1 {
+  font-size: 15px;
+  line-height: 27px;
+  color: #233148;
+  font-family: "Work Sans";
+  font-weight: 600;
+}
+
+.info-section > .nav-lists li {
+  font-size: 14px;
+  line-height: 27px;
+  color: #6a6d89;
+  font-family: "Work Sans";
+  font-weight: 400;
+}
+
+.info-section > .get-in-touch {
+  text-align: center;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+.info-section > .get-in-touch > h1 {
+  font-size: 30px;
+  line-height: 60px;
+  color: #233148;
+  font-family: "Work Sans";
+  font-weight: 600;
+}
+.info-section > .get-in-touch > p {
+  font-size: 14px;
+  line-height: 27px;
+  color: #6a6d89;
+  font-family: "Work Sans";
+  font-weight: 400;
+}
+
+.info-section button {
+  border: none;
+  background-color: #33d2fd;
+  font-size: 15px;
+  line-height: 27px;
+  color: #233148;
+  font-family: "Work Sans";
+  font-weight: 600;
+  border-radius: 0%;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 100ms ease-in-out 50ms;
+}
+
+.info-section button:hover {
+  transform: translate(0px, -1px);
+  box-shadow: 0px 0px 5px 5px #33d2fd32;
+}
+
+.top-style-bar {
+  background-color: #233148;
+  width: 100%;
+  height: 4px;
+}
