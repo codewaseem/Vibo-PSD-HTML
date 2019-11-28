@@ -382,6 +382,7 @@ button.btn-invert:hover {
   justify-content: center;
   align-items: center;
   padding: 50px;
+  position: relative;
 }
 
 .marketing-3 > img {
@@ -415,4 +416,30 @@ button.btn-invert:hover {
 
 .marketing-3 > section > div img {
   margin-right: 35px;
+}
+
+.marketing-3 > .accent-cta {
+  position: absolute;
+  border: none;
+  width: 370px;
+  height: 70px;
+  filter: drop-shadow(0px 11px 14.5px rgba(255, 7, 95, 0.2));
+  background-image: linear-gradient(180deg, #ff7c6e 1%, #f5317f 99%);
+  font-size: 20px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: -35px;
+  left: calc(50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 150ms ease-out 50ms;
+}
+
+.marketing-3 > .accent-cta:hover {
+  box-shadow: 0px 0px 10px 5px #ff7c6e5f;
+  transform: translateX(-50%) scale(1.1);
 }
