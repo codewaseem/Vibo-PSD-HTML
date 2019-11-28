@@ -124,7 +124,7 @@ button.btn-invert {
   height: fit-content;
   background: #fafafc;
   position: relative;
-  padding: 2vh 4vw;
+  padding: 50px;
 }
 .marketing_bg_container {
   width: 100%;
@@ -201,14 +201,15 @@ button.btn-invert {
   font-weight: 400;
   text-align: center;
 }
-
+.marketing-3,
 .marketing-2,
 .marketing-1 {
   display: grid;
-  padding: 30px;
+  padding: 75px;
   background-color: #fafafc;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 100px;
+  row-gap: 35px;
 }
 
 .marketing-2 article {
@@ -369,4 +370,46 @@ button.btn-invert:hover {
   transform: scale(1, 1);
   height: 50px;
   margin-top: 20px;
+}
+
+.marketing-3 {
+  background-image: url("../assets/hero_bg.svg"),
+    linear-gradient(to bottom right, #15ebed, #34b4f6);
+  background-size: 100% 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.marketing-3 > img {
+  min-width: 100px;
+  justify-self: center;
+}
+
+.marketing-3 > section > p {
+  width: 100%;
+  max-width: 400px;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-weight: 400;
+}
+
+.marketing-3 > section {
+  display: grid;
+  gap: 25px;
+}
+
+.marketing-3 > section > h1 {
+  font-size: 30px;
+  line-height: 60px;
+  color: #233148;
+  font-family: "Work Sans";
+  font-weight: 700;
+}
+
+.marketing-3 > section > div img {
+  margin-right: 35px;
 }
