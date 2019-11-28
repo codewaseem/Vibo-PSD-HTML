@@ -21,6 +21,9 @@ body {
   cursor: pointer;
   padding-left: 10%;
 }
+.hero > header > .logo img {
+  min-width: 100px;
+}
 .hero > header {
   padding: 25px;
   display: flex;
