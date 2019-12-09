@@ -437,6 +437,7 @@ button.btn-invert:hover {
   transform: translateX(-50%);
   cursor: pointer;
   transition: all 150ms ease-out 50ms;
+  max-width: 80%;
 }
 
 .marketing-3 > .accent-cta:hover {
@@ -473,21 +474,23 @@ button.btn-invert:hover {
   font-weight: 400;
 }
 
-.info-section > .get-in-touch {
+.get-in-touch {
   text-align: center;
   display: grid;
   gap: 20px;
   justify-content: center;
   justify-items: center;
+  background-color: #233148;
+  padding: 30px;
 }
-.info-section > .get-in-touch > h1 {
+.get-in-touch > h1 {
   font-size: 30px;
   line-height: 60px;
-  color: #233148;
+  color: white;
   font-family: "Work Sans";
   font-weight: 600;
 }
-.info-section > .get-in-touch > p {
+.get-in-touch > p {
   font-size: 14px;
   line-height: 27px;
   color: #6a6d89;
@@ -495,7 +498,7 @@ button.btn-invert:hover {
   font-weight: 400;
 }
 
-.info-section button {
+.get-in-touch button {
   border: none;
   background-color: #33d2fd;
   font-size: 15px;
@@ -509,7 +512,7 @@ button.btn-invert:hover {
   transition: all 100ms ease-in-out 50ms;
 }
 
-.info-section button:hover {
+.get-in-touch button:hover {
   transform: translate(0px, -1px);
   box-shadow: 0px 0px 5px 5px #33d2fd32;
 }
